@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>TMB</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="segunda-secao">
+            <div class="input">
+                <input class="input-size peso" type="text" name="peso" placeholder="Peso" id="">
+                <input class="input-size altura" type="text" name="altura" placeholder="Altura" id="">
+                <input class="input-size idade" type="text" name="idade" placeholder="Idade" id="">
+            </div>
+            <button type="submit" value="calcular" class="botao" onclick="calcular()">CALCULAR</button>
+
+            <div class="res">resultado</div>
+        </div>
+    </div>
+    <script>
+        function calcular() {
+            let peso = window.document.getElementsByClassName('peso')[0]
+            let altura = window.document.getElementsByClassName('altura')[0]
+            let idade = window.document.getElementsByClassName('idade')[0]
+            let botao = window.document.getElementsByClassName('res')[0]
+
+
+            let alt = Number(altura.value)
+            let pes = Number(peso.value)
+            let idad = Number(idade.value)
+
+            let resultado = parseFloat(88.362+(13.397*pes)+(4.799*alt)-(5.677*idad))
+            
+            botao.innerText = resultado
+            
+        }
+    </script>
+</body>
+</html>

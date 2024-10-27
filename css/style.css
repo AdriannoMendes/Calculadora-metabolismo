@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+.logo{
+    background-image: url('/imagem/imagem-fundo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    height: 200px;
+    width: 500px;
+}
+.segunda-secao{
+    margin: auto;
+    height: 200px;
+    width: 500px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+.input{
+    display: flex;
+    justify-content: space-around;
+}
+.input-size{
+    height: 35px;
+    width: 65px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+button{
+    background-color: greenyellow;
+    padding: 5px;
+    color: black;
+}
+::placeholder{
+    color: white;
+}
