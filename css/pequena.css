@@ -4,25 +4,33 @@
     box-sizing: border-box;
 }
 .container{
-    width: 100vw;
-}
-.logo{
-    width: 110%;
+    height: 160px;
+    background-color: black;
     background-image: url('/imagem/imagem-fundo.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
+    margin: auto;  
 }
+
 .segunda-secao{
+    height: 100vh;
     margin: auto;
     color: white;
+    background-color: black;
     text-align: center;
     padding: 10px;
 }
 a{
     color: red;
     text-decoration: none;
+    font-size: larger;
+    padding: 5px;
 }
+h2{
+    margin: 5px;
+}
+
+/*PÁGINA CÁLCULO MASCULINO*/
 
 .input{
     display: flex;
@@ -40,8 +48,16 @@ a{
 button{
     background-color: greenyellow;
     padding: 5px;
+    margin: 10px;
     color: black;
 }
 ::placeholder{
     color: white;
 }
+.res{
+    margin: 10px;
+}
+option{
+    background-color: rgba(0, 0, 0, 0.849);
+}
+

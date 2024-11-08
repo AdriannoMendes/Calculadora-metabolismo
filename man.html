@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pequena.css">
     <title>TMB</title>
 </head>
 <body>
-    <div class="container">
-        <div class="logo"></div>
+    <div class="container"></div>
         <div class="segunda-secao">
             <div class="input">
                 <input class="input-size peso" type="text" name="peso" placeholder="Peso" id="">
                 <input class="input-size altura" type="text" name="altura" placeholder="Altura" id="">
                 <input class="input-size idade" type="text" name="idade" placeholder="Idade" id="">
-                <select name="status" id="status">
+                <select class="input-size" name="status" id="status">
                     <option value="sedentario">sedentario</option>
                     <option value="pouco ativo">pouco ativo</option>
                     <option value="moderado">moderado</option>
@@ -27,7 +26,6 @@
             <div class="res">Resultado</div>
             <a href="index.html">Voltar</a>
         </div>
-    </div>
     <script>
         function calcular() {
             let peso = window.document.getElementsByClassName('peso')[0]
@@ -42,7 +40,7 @@
             let idad = Number(idade.value)
             let estado = (status.value)
 
-            let resultado = (88.362+(13.397*pes)+(4.799*alt)-(5.677*idad))
+            let resultado = parseFloat(88.362+(13.397*pes)+(4.799*alt)-(5.677*idad))
 
             switch (estado) {
                 case "sedentario":

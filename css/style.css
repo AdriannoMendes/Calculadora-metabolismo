@@ -7,18 +7,8 @@
     height: 400px;
     background-color: rgba(0, 0, 0, 0.904);
 }
-.logo{
-    background-image: url('/imagem/imagem-fundo.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    height: 200px;
-    width: 500px;
-}
 .segunda-secao{
     margin: auto;
-    height: 200px;
-    width: 500px;
     color: white;
     text-align: center;
     padding: 10px;
