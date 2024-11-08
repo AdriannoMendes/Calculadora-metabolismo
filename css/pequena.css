@@ -5,7 +5,7 @@
 }
 .container{
     height: 160px;
-    background-color: black;
+    background-color: rgb(61, 59, 59);
     background-image: url('/imagem/imagem-fundo.webp');
     background-repeat: no-repeat;
     background-size: cover;

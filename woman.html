@@ -3,36 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pequena.css" media="screen and (max-width: 720px)">
     <title>TMB</title>
 </head>
 <body>
-    <div class="container">
-        <div class="logo"></div>
+    <div class="container"></div>
         <div class="segunda-secao">
             <div class="input">
                 <input class="input-size peso" type="text" name="peso" placeholder="Peso" id="">
                 <input class="input-size altura" type="text" name="altura" placeholder="Altura" id="">
                 <input class="input-size idade" type="text" name="idade" placeholder="Idade" id="">
+                <select class="input-size" name="status" id="status">
+                    <option value="sedentario">sedentario</option>
+                    <option value="pouco ativo">pouco ativo</option>
+                    <option value="moderado">moderado</option>
+                    <option value="muito ativo">muito ativo</option>
+                    <option value="extremamente ativo">extremamente ativo</option>
+                </select>
             </div>
             <button type="submit" value="calcular" class="botao" onclick="calcular()">CALCULAR</button>
 
-            <div class="res">resultado</div>
-            <a href="index.html">back</a>
+            <div class="res">Resultado</div>
+            <a href="index.html">Voltar</a>
         </div>
-    </div>
     <script>
         function calcular() {
             let peso = window.document.getElementsByClassName('peso')[0]
             let altura = window.document.getElementsByClassName('altura')[0]
             let idade = window.document.getElementsByClassName('idade')[0]
+            let status = window.document.getElementById('status')
             let botao = window.document.getElementsByClassName('res')[0]
+
 
             let alt = Number(altura.value)
             let pes = Number(peso.value)
             let idad = Number(idade.value)
+            let estado = (status.value)
 
             let resultado = parseInt(447.593+(9.247*pes)+(3.098*alt)-(4.330*idad))
+
+            switch (estado) {
+                case "sedentario":
+                resultado = resultado*1.2
+                    break;
+
+                    case "pouco ativo":
+                resultado = resultado*1.375
+                    break;
+
+                    case "moderado":
+                resultado = resultado*1.55
+                    break;
+
+                    case "muito ativo":
+                resultado = resultado*1.725
+                    break;
+
+                    case "extremamente ativo":
+                resultado = resultado*1.9
+                    break;
+            }
             
             botao.innerText = resultado
             
@@ -40,4 +70,6 @@
     </script>
 </body>
 </html>
+
+            
 <!--TMB=447.593+(9.247×peso)+(3.098×altura)−(4.330×idade)
