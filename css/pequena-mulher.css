@@ -5,7 +5,7 @@
 }
 .container{
     height: 160px;
-    background-image: url('/imagem/fundo-mulher.jpg');
+    background-image: url('../imagem/fundo-mulher.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,7 +19,7 @@
     padding: 10px;
 }
 a{
-    color: black;
+    color: red;
     text-decoration: none;
     font-size: larger;
     padding: 5px;
