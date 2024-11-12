@@ -5,7 +5,6 @@
 }
 .container{
     height: 160px;
-    background-color: rgb(61, 59, 59);
     background-image: url('/imagem/fundo-mulher.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +14,7 @@
     height: 100vh;
     margin: auto;
     color: white;
-    background-color: rgb(87, 85, 85);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
 }
@@ -29,7 +28,7 @@ h2{
     margin: 5px;
 }
 
-/*PÁGINA CÁLCULO MASCULINO*/
+/*PÁGINA CÁLCULO FEMININO*/
 
 .input{
     display: flex;
