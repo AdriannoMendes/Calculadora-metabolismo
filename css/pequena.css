@@ -5,7 +5,7 @@
 }
 .container{
     height: 160px;
-    background-image: url('/imagem/imagem-fundo.jpeg');
+    background-image: url('../imagem/imagem-fundo.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -32,11 +32,13 @@ h2{
 
 .input{
     display: flex;
-    justify-content: space-around;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
 }
 .input-size{
     height: 35px;
-    width: 65px;
+    width: 100px;
     padding-left: 10px;
     margin-bottom: 5px;
     background-color: transparent;
